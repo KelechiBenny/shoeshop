@@ -1,0 +1,16 @@
+{
+    "name": "Tribesquare/Shoeshop",
+    "description": "An e-commerce platform for buying and selling shoes",
+    "authors": [
+        {
+            "name": "Benny Kelechi",
+            "email": "kelechi@tribesquare.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Models\\": "models/"
+        }
+    }
+}
