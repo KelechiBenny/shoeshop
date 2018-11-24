@@ -36,7 +36,7 @@
 	<span class="icon-bar"></span>
 </a>
   <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
+    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Bootsshop"/></a>
 		<form class="form-inline navbar-search" method="post" action="products.html" >
 		<input id="srchFld" class="srchTxt" type="text" />
 		  <select class="srchTxt">
@@ -90,7 +90,7 @@
 	<div class="row">
 <!-- Sidebar ================================================== -->
 	<div id="sidebar" class="span3">
-		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
+		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="assets/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
 		<ul id="sideManu" class="nav nav-tabs nav-stacked">
 			<li class="subMenu open"><a> ELECTRONICS [230]</a>
 				<ul>
@@ -129,21 +129,21 @@
 		</ul>
 		<br/>
 		  <div class="thumbnail">
-			<img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
+			<img src="assets/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
 			<div class="caption">
 			  <h5>Panasonic</h5>
 				<h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
 			</div>
 		  </div><br/>
 			<div class="thumbnail">
-				<img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
+				<img src="assets/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
 				<div class="caption">
 				  <h5>Kindle</h5>
 				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
 				</div>
 			  </div><br/>
 			<div class="thumbnail">
-				<img src="themes/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
+				<img src="assets/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
 				<div class="caption">
 				  <h5>Payment Methods</h5>
 				</div>
@@ -379,72 +379,72 @@
 			 </div>
 			<div id="socialMedia" class="span3 pull-right">
 				<h5>SOCIAL MEDIA </h5>
-				<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook" alt="facebook"/></a>
-				<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter" alt="twitter"/></a>
-				<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube" alt="youtube"/></a>
+				<a href="#"><img width="60" height="60" src="assets/images/facebook.png" title="facebook" alt="facebook"/></a>
+				<a href="#"><img width="60" height="60" src="assets/images/twitter.png" title="twitter" alt="twitter"/></a>
+				<a href="#"><img width="60" height="60" src="assets/images/youtube.png" title="youtube" alt="youtube"/></a>
 			 </div> 
 		 </div>
 		<p class="pull-right">&copy; Bootshop</p>
 	</div><!-- Container End -->
 	</div>
 <!-- Placed at the end of the document so the pages load faster ============================================= -->
-	<script src="themes/js/jquery.js" type="text/javascript"></script>
-	<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="themes/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/jquery.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
 	
-	<script src="themes/js/bootshop.js"></script>
-    <script src="themes/js/jquery.lightbox-0.5.js"></script>
+	<script src="assets/js/bootshop.js"></script>
+    <script src="assets/js/jquery.lightbox-0.5.js"></script>
 	
 	<!-- Themes switcher section ============================================================================================= -->
 <div id="secectionBox">
-<link rel="stylesheet" href="themes/switch/themeswitch.css" type="text/css" media="screen" />
-<script src="themes/switch/theamswitcher.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="assets/switch/themeswitch.css" type="text/css" media="screen" />
+<script src="assets/switch/theamswitcher.js" type="text/javascript" charset="utf-8"></script>
 	<div id="themeContainer">
 	<div id="hideme" class="themeTitle">Style Selector</div>
 	<div class="themeName">Oregional Skin</div>
 	<div class="images style">
-	<a href="themes/css/#" name="bootshop"><img src="themes/switch/images/clr/bootshop.png" alt="bootstrap business templates" class="active"></a>
-	<a href="themes/css/#" name="businessltd"><img src="themes/switch/images/clr/businessltd.png" alt="bootstrap business templates" class="active"></a>
+	<a href="assets/css/#" name="bootshop"><img src="assets/switch/images/clr/bootshop.png" alt="bootstrap business templates" class="active"></a>
+	<a href="assets/css/#" name="businessltd"><img src="assets/switch/images/clr/businessltd.png" alt="bootstrap business templates" class="active"></a>
 	</div>
 	<div class="themeName">Bootswatch Skins (11)</div>
 	<div class="images style">
-		<a href="themes/css/#" name="amelia" title="Amelia"><img src="themes/switch/images/clr/amelia.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="spruce" title="Spruce"><img src="themes/switch/images/clr/spruce.png" alt="bootstrap business templates" ></a>
-		<a href="themes/css/#" name="superhero" title="Superhero"><img src="themes/switch/images/clr/superhero.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="cyborg"><img src="themes/switch/images/clr/cyborg.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="cerulean"><img src="themes/switch/images/clr/cerulean.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="journal"><img src="themes/switch/images/clr/journal.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="readable"><img src="themes/switch/images/clr/readable.png" alt="bootstrap business templates"></a>	
-		<a href="themes/css/#" name="simplex"><img src="themes/switch/images/clr/simplex.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="slate"><img src="themes/switch/images/clr/slate.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="spacelab"><img src="themes/switch/images/clr/spacelab.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="united"><img src="themes/switch/images/clr/united.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="amelia" title="Amelia"><img src="assets/switch/images/clr/amelia.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="spruce" title="Spruce"><img src="assets/switch/images/clr/spruce.png" alt="bootstrap business templates" ></a>
+		<a href="assets/css/#" name="superhero" title="Superhero"><img src="assets/switch/images/clr/superhero.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="cyborg"><img src="assets/switch/images/clr/cyborg.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="cerulean"><img src="assets/switch/images/clr/cerulean.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="journal"><img src="assets/switch/images/clr/journal.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="readable"><img src="assets/switch/images/clr/readable.png" alt="bootstrap business templates"></a>	
+		<a href="assets/css/#" name="simplex"><img src="assets/switch/images/clr/simplex.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="slate"><img src="assets/switch/images/clr/slate.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="spacelab"><img src="assets/switch/images/clr/spacelab.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="united"><img src="assets/switch/images/clr/united.png" alt="bootstrap business templates"></a>
 		<p style="margin:0;line-height:normal;margin-left:-10px;display:none;"><small>These are just examples and you can build your own color scheme in the backend.</small></p>
 	</div>
 	<div class="themeName">Background Patterns </div>
 	<div class="images patterns">
-		<a href="themes/css/#" name="pattern1"><img src="themes/switch/images/pattern/pattern1.png" alt="bootstrap business templates" class="active"></a>
-		<a href="themes/css/#" name="pattern2"><img src="themes/switch/images/pattern/pattern2.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern3"><img src="themes/switch/images/pattern/pattern3.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern4"><img src="themes/switch/images/pattern/pattern4.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern5"><img src="themes/switch/images/pattern/pattern5.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern6"><img src="themes/switch/images/pattern/pattern6.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern7"><img src="themes/switch/images/pattern/pattern7.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern8"><img src="themes/switch/images/pattern/pattern8.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern9"><img src="themes/switch/images/pattern/pattern9.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern10"><img src="themes/switch/images/pattern/pattern10.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern1"><img src="assets/switch/images/pattern/pattern1.png" alt="bootstrap business templates" class="active"></a>
+		<a href="assets/css/#" name="pattern2"><img src="assets/switch/images/pattern/pattern2.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern3"><img src="assets/switch/images/pattern/pattern3.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern4"><img src="assets/switch/images/pattern/pattern4.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern5"><img src="assets/switch/images/pattern/pattern5.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern6"><img src="assets/switch/images/pattern/pattern6.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern7"><img src="assets/switch/images/pattern/pattern7.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern8"><img src="assets/switch/images/pattern/pattern8.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern9"><img src="assets/switch/images/pattern/pattern9.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern10"><img src="assets/switch/images/pattern/pattern10.png" alt="bootstrap business templates"></a>
 		
-		<a href="themes/css/#" name="pattern11"><img src="themes/switch/images/pattern/pattern11.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern12"><img src="themes/switch/images/pattern/pattern12.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern13"><img src="themes/switch/images/pattern/pattern13.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern14"><img src="themes/switch/images/pattern/pattern14.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern15"><img src="themes/switch/images/pattern/pattern15.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern11"><img src="assets/switch/images/pattern/pattern11.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern12"><img src="assets/switch/images/pattern/pattern12.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern13"><img src="assets/switch/images/pattern/pattern13.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern14"><img src="assets/switch/images/pattern/pattern14.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern15"><img src="assets/switch/images/pattern/pattern15.png" alt="bootstrap business templates"></a>
 		
-		<a href="themes/css/#" name="pattern16"><img src="themes/switch/images/pattern/pattern16.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern17"><img src="themes/switch/images/pattern/pattern17.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern18"><img src="themes/switch/images/pattern/pattern18.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern19"><img src="themes/switch/images/pattern/pattern19.png" alt="bootstrap business templates"></a>
-		<a href="themes/css/#" name="pattern20"><img src="themes/switch/images/pattern/pattern20.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern16"><img src="assets/switch/images/pattern/pattern16.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern17"><img src="assets/switch/images/pattern/pattern17.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern18"><img src="assets/switch/images/pattern/pattern18.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern19"><img src="assets/switch/images/pattern/pattern19.png" alt="bootstrap business templates"></a>
+		<a href="assets/css/#" name="pattern20"><img src="assets/switch/images/pattern/pattern20.png" alt="bootstrap business templates"></a>
 		 
 	</div>
 	</div>
