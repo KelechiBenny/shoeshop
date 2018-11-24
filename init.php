@@ -10,7 +10,7 @@ define('URL', $url);
 date_default_timezone_set('Africa/Lagos');
 
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 // spl_autoload_register(function ($class_name) {
 //     include 'controllers/'.$class_name . '.php';
