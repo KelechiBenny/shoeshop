@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,30 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-<!--Less styles -->
-   <!-- Other Less css file //different less files has different color scheam
-	<link rel="stylesheet/less" type="text/css" href="themes/less/simplex.less">
-	<link rel="stylesheet/less" type="text/css" href="themes/less/classified.less">
-	<link rel="stylesheet/less" type="text/css" href="themes/less/amelia.less">  MOVE DOWN TO activate
-	-->
-	<!--<link rel="stylesheet/less" type="text/css" href="themes/less/bootshop.less">
-	<script src="themes/js/less.js" type="text/javascript"></script> -->
-	
-<!-- Bootstrap style --> 
-    <link id="callCss" rel="stylesheet" href="themes/bootshop/bootstrap.min.css" media="screen"/>
-    <link href="themes/css/base.css" rel="stylesheet" media="screen"/>
-<!-- Bootstrap style responsive -->	
-	<link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
-	<link href="themes/css/font-awesome.css" rel="stylesheet" type="text/css">
-<!-- Google-code-prettify -->	
-	<link href="themes/js/google-code-prettify/prettify.css" rel="stylesheet"/>
-<!-- fav and touch icons -->
-    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="themes/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="themes/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
-	<style type="text/css" id="enject"></style>
+
+		<?php include DIR."/views/layouts/header.php" ?>
+		
   </head>
 <body>
 <div id="header">
@@ -77,7 +56,7 @@
 	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
 	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
 		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
 			<h3>Login Block</h3>
 		  </div>
 		  <div class="modal-body">
@@ -173,152 +152,300 @@
 	<div class="span9">
     <ul class="breadcrumb">
 		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
-		<li class="active">Registration</li>
+		<li class="active">Products Name</li>
     </ul>
-	<h3> Registration</h3>	
-	<div class="well">
-	<!--
-	<div class="alert alert-info fade in">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-	 </div>
-	<div class="alert fade in">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-	 </div>
-	 <div class="alert alert-block alert-error fade in">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-	 </div> -->
-	<form class="form-horizontal" >
-		<h4>Your personal information</h4>
+	<h3> Products Name <small class="pull-right"> 40 products are available </small></h3>	
+	<hr class="soft"/>
+	<p>
+		Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - that is why our goods are so popular and we have a great number of faithful customers all over the country.
+	</p>
+	<hr class="soft"/>
+	<form class="form-horizontal span6">
 		<div class="control-group">
-		
+		  <label class="control-label alignL">Sort By </label>
+			<select>
+              <option>Priduct name A - Z</option>
+              <option>Priduct name Z - A</option>
+              <option>Priduct Stoke</option>
+              <option>Price Lowest first</option>
+            </select>
 		</div>
-		<div class="control-group">
-			<label class="control-label" for="inputFname">Full name <sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="inputFname" name="full_name" placeholder="Full Name">
+	  </form>
+	  
+<div id="myTab" class="pull-right">
+ <a href="#listView" data-toggle="tab"><span class="btn btn-large"><i class="icon-list"></i></span></a>
+ <a href="#blockView" data-toggle="tab"><span class="btn btn-large btn-primary"><i class="icon-th-large"></i></span></a>
+</div>
+<br class="clr"/>
+<div class="tab-content">
+	<div class="tab-pane" id="listView">
+		<div class="row">	  
+			<div class="span2">
+				<img src="themes/images/products/3.jpg" alt=""/>
 			</div>
-		 </div>
-		
-		<div class="control-group">
-		<label class="control-label" for="input_email">Email <sup>*</sup></label>
-		<div class="controls">
-		  <input type="text" id="input_email" name="email" placeholder="Email">
+			<div class="span4">
+				<h3>New | Available</h3>				
+				<hr class="soft"/>
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+				<br class="clr"/>
+			</div>
+			<div class="span3 alignR">
+			<form class="form-horizontal qtyFrm">
+			<h3> $140.00</h3>
+			<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+			</label><br/>
+			
+			  <a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+			  <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+			
+				</form>
+			</div>
 		</div>
-	  </div>	  
-	<div class="control-group">
-		<label class="control-label" for="inputPassword">Password <sup>*</sup></label>
-		<div class="controls">
-		  <input type="password" id="inputPassword" name="password" placeholder="Password">
+		<hr class="soft"/>
+		<div class="row">	  
+			<div class="span2">
+				<img src="themes/images/products/1.jpg" alt=""/>
+			</div>
+			<div class="span4">
+				<h3>New | Available</h3>				
+				<hr class="soft"/>
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+				<br class="clr"/>
+			</div>
+			<div class="span3 alignR">
+			<form class="form-horizontal qtyFrm">
+				<h3> $140.00</h3>
+				<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+				</label><br/>
+				
+				<a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+				<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				
+			</form>
+			</div>
 		</div>
-	</div>	  
-	<div class="control-group">
-		<label class="control-label" for="inputPassword1">Password <sup>*</sup></label>
-		<div class="controls">
-			<input type="password" id="inputPassword1" name="confirm_password" placeholder="Confirm Password">
+		<hr class="soft"/>
+		<div class="row">	  
+			<div class="span2">
+				<img src="themes/images/products/3.jpg" alt=""/>
+			</div>
+			<div class="span4">
+				<h3>New | Available</h3>				
+				<hr class="soft"/>
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+				<br class="clr"/>
+			</div>
+			<div class="span3 alignR">
+			<form class="form-horizontal qtyFrm">
+				<h3> $140.00</h3>
+				<label class="checkbox">
+					<input type="checkbox">  Adds product to compair
+				</label><br/>
+				
+				  <a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+				  <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				
+			</form>
+			</div>
 		</div>
+		<hr class="soft"/>
+		<div class="row">	  
+			<div class="span2">
+				<img src="themes/images/products/3.jpg" alt=""/>
+			</div>
+			<div class="span4">
+				<h3>New | Available</h3>				
+				<hr class="soft"/>
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+				<br class="clr"/>
+			</div>
+			<div class="span3 alignR">
+				<form class="form-horizontal qtyFrm">
+				<h3> $140.00</h3>
+				<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+				</label><br/>
+				
+				<a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+				<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				
+				</form>
+			</div>
+		</div>
+	
+		<hr class="soft"/>
+		<div class="row">	  
+			<div class="span2">
+				<img src="themes/images/products/3.jpg" alt=""/>
+			</div>
+			<div class="span4">
+				<h3>New | Available</h3>				
+				<hr class="soft"/>
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+				<br class="clr"/>
+			</div>
+			<div class="span3 alignR">
+				<form class="form-horizontal qtyFrm">
+				<h3> $140.00</h3>
+				<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+				</label><br/>
+				<a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+				<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				</form>
+			</div>
+		</div>
+		<hr class="soft"/>
+		<div class="row">	  
+			<div class="span2">
+				<img src="themes/images/products/3.jpg" alt=""/>
+			</div>
+			<div class="span4">
+				<h3>New | Available</h3>				
+				<hr class="soft"/>
+				<h5>Product Name </h5>
+				<p>
+				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
+				that is why our goods are so popular..
+				</p>
+				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+				<br class="clr"/>
+			</div>
+			<div class="span3 alignR">
+				<form class="form-horizontal qtyFrm">
+				<h3> $140.00</h3>
+				<label class="checkbox">
+				<input type="checkbox">  Adds product to compair
+				</label><br/>
+				
+				<a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+				<a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+				
+				</form>
+			</div>
+		</div>
+		<hr class="soft"/>
 	</div>
 
-	
-
-		<h4>Your address</h4>
-		<div class="control-group">
-			<label class="control-label" for="inputFname">First name <sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="inputFname" placeholder="First Name">
-			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label" for="inputLname">Last name <sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="inputLname" placeholder="Last Name"/>
-			</div>
-		</div>
-		
-		<div class="control-group">
-			<label class="control-label" for="company">Company</label>
-			<div class="controls">
-			  <input type="text" id="company" placeholder="company"/>
-			</div>
-		</div>
-		
-		<div class="control-group">
-			<label class="control-label" for="address">Address<sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="address" placeholder="Adress"/> <span>Street address, P.O. box, company name, c/o</span>
-			</div>
-		</div>
-		
-		<div class="control-group">
-			<label class="control-label" for="address2">Address (Line 2)<sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="address2" placeholder="Adress line 2"/> <span>Apartment, suite, unit, building, floor, etc.</span>
-			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label" for="city">City<sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="city" placeholder="city"/> 
-			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label" for="state">State<sup>*</sup></label>
-			<div class="controls">
-			  <select id="state" >
-				<option value="">-</option>
-				<option value="1">Alabama</option><option value="2">Alaska</option><option value="3">Arizona</option><option value="4">Arkansas</option><option value="5">California</option><option value="6">Colorado</option><option value="7">Connecticut</option><option value="8">Delaware</option><option value="53">District of Columbia</option><option value="9">Florida</option><option value="10">Georgia</option><option value="11">Hawaii</option><option value="12">Idaho</option><option value="13">Illinois</option><option value="14">Indiana</option><option value="15">Iowa</option><option value="16">Kansas</option><option value="17">Kentucky</option><option value="18">Louisiana</option><option value="19">Maine</option><option value="20">Maryland</option><option value="21">Massachusetts</option><option value="22">Michigan</option><option value="23">Minnesota</option><option value="24">Mississippi</option><option value="25">Missouri</option><option value="26">Montana</option><option value="27">Nebraska</option><option value="28">Nevada</option><option value="29">New Hampshire</option><option value="30">New Jersey</option><option value="31">New Mexico</option><option value="32">New York</option><option value="33">North Carolina</option><option value="34">North Dakota</option><option value="35">Ohio</option><option value="36">Oklahoma</option><option value="37">Oregon</option><option value="38">Pennsylvania</option><option value="51">Puerto Rico</option><option value="39">Rhode Island</option><option value="40">South Carolina</option><option value="41">South Dakota</option><option value="42">Tennessee</option><option value="43">Texas</option><option value="52">US Virgin Islands</option><option value="44">Utah</option><option value="45">Vermont</option><option value="46">Virginia</option><option value="47">Washington</option><option value="48">West Virginia</option><option value="49">Wisconsin</option><option value="50">Wyoming</option></select>
-			</div>
-		</div>		
-		<div class="control-group">
-			<label class="control-label" for="postcode">Zip / Postal Code<sup>*</sup></label>
-			<div class="controls">
-			  <input type="text" id="postcode" placeholder="Zip / Postal Code"/> 
-			</div>
-		</div>
-		
-		<div class="control-group">
-			<label class="control-label" for="country">Country<sup>*</sup></label>
-			<div class="controls">
-			<select id="country" >
-				<option value="">-</option>
-				<option value="1">Country</option>
-			</select>
-			</div>
-		</div>	
-		<div class="control-group">
-			<label class="control-label" for="aditionalInfo">Additional information</label>
-			<div class="controls">
-			  <textarea name="aditionalInfo" id="aditionalInfo" cols="26" rows="3">Additional information</textarea>
-			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label" for="phone">Home phone <sup>*</sup></label>
-			<div class="controls">
-			  <input type="text"  name="phone" id="phone" placeholder="phone"/> <span>You must register at least one phone number</span>
-			</div>
-		</div>
-		
-		<div class="control-group">
-			<label class="control-label" for="mobile">Mobile Phone </label>
-			<div class="controls">
-			  <input type="text"  name="mobile" id="mobile" placeholder="Mobile Phone"/> 
-			</div>
-		</div>
-		
-	<p><sup>*</sup>Required field	</p>
-	
-	<div class="control-group">
-			<div class="controls">
-				<input type="hidden" name="email_create" value="1">
-				<input type="hidden" name="is_new_customer" value="1">
-				<input class="btn btn-large btn-success" type="submit" value="Register" />
-			</div>
-		</div>		
-	</form>
+	<div class="tab-pane  active" id="blockView">
+		<ul class="thumbnails">
+			<li class="span3">
+			  <div class="thumbnail">
+				<a href="product_details.html"><img src="themes/images/products/3.jpg" alt=""/></a>
+				<div class="caption">
+				  <h5>Manicure &amp; Pedicure</h5>
+				  <p> 
+					I'm a paragraph. Click here 
+				  </p>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a href="product_details.html"><img src="themes/images/products/3.jpg" alt=""/></a>
+				<div class="caption">
+				  <h5>Manicure &amp; Pedicure</h5>
+				  <p> 
+					I'm a paragraph. Click here 
+				  </p>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a href="product_details.html"><img src="themes/images/products/3.jpg" alt=""/></a>
+				<div class="caption">
+				  <h5>Manicure &amp; Pedicure</h5>
+				  <p> 
+					I'm a paragraph. Click here 
+				  </p>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a href="product_details.html"><img src="themes/images/products/3.jpg" alt=""/></a>
+				<div class="caption">
+				  <h5>Manicure &amp; Pedicure</h5>
+				  <p> 
+					I'm a paragraph. Click here 
+				  </p>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a href="product_details.html"><img src="themes/images/products/3.jpg" alt=""/></a>
+				<div class="caption">
+				  <h5>Manicure &amp; Pedicure</h5>
+				  <p> 
+					I'm a paragraph. Click here 
+				  </p>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+				</div>
+			  </div>
+			</li>
+			<li class="span3">
+			  <div class="thumbnail">
+				<a href="product_details.html"><img src="themes/images/products/3.jpg" alt=""/></a>
+				<div class="caption">
+				  <h5>Manicure &amp; Pedicure</h5>
+				  <p> 
+					I'm a paragraph. Click here 
+				  </p>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+				</div>
+			  </div>
+			</li>
+		  </ul>
+	<hr class="soft"/>
+	</div>
 </div>
 
+	<a href="compair.html" class="btn btn-large pull-right">Compair Product</a>
+	<div class="pagination">
+			<ul>
+			<li><a href="#">&lsaquo;</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">...</a></li>
+			<li><a href="#">&rsaquo;</a></li>
+			</ul>
+			</div>
+			<br class="clr"/>
 </div>
 </div>
 </div>
