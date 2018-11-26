@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootshop online Shopping cart</title>
+    <title>Shoeshop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 		<meta name="author" content="">
@@ -46,30 +46,8 @@
 	 <li class=""><a href="normal.html">Delivery</a></li>
 	 <li class=""><a href="contact.html">Contact</a></li>
 	 <li class="">
-	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-danger">Logout </span><i class="glyphicon glyphicon-trash"></i></a>
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
-			<h3>Login Block</h3>
-		  </div>
-		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
-			  <div class="control-group">								
-				<input type="text" id="inputEmail" placeholder="Email">
-			  </div>
-			  <div class="control-group">
-				<input type="password" id="inputPassword" placeholder="Password">
-			  </div>
-			  <div class="control-group">
-				<label class="checkbox">
-				<input type="checkbox"> Remember me
-				</label>
-			  </div>
-			</form>		
-			<button type="submit" class="btn btn-success">Sign in</button>
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		  </div>
-	</div>
+	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-danger">Logout </span></a>
+	
 	</li>
     </ul>
   </div>
@@ -102,7 +80,7 @@
 	<div class="row">
 		<div class="span4">
 			<div class="well">
-			<h5>CREATE NEW CATEGORY</h5><br/>
+			<h5>ADD NEW CATEGORY</h5><br/>
 			
 			<form action="register.html">
 			  <div class="control-group">
@@ -112,7 +90,7 @@
 				</div>
 			  </div>
 			  <div class="controls">
-			  <button type="submit" class="btn block" name>Create category</button>
+			  <button type="submit" class="btn block" name="add_category">add category</button>
 			  </div>
 			</form>
 		</div>
@@ -136,8 +114,34 @@
 		</div>
 		</div>
 	</div>	
-	
+	<div class="row">
+		<div class="span4">
+			<div class="well">
+				<h5>UPDATE CATEGORY</h5>
+
+				<form action="register.html">
+			  <div class="control-group">
+				<label class="control-label" for="inputEmail0">Enter your desired new category name</label>
+				<div class="controls">
+					<select name="" id="" class="span3">
+						<?php?>
+					</select>
+				</div>
+				<div class="controls">
+				  <input class="span3"  type="text" id="inputEmail0" name="new_category_name" placeholder="new category name">
+				</div>
+			  </div>
+			  <div class="controls">
+				<input type="hidden" name="id" value="<?php?>">
+			  <button type="submit" class="btn block" name="edit_category">update category</button>
+			  </div>
+			</form>
+
+			</div>
+		</div>
+	</div>
 </div>
+		
 </div></div>
 </div>
 <!-- MainBody End ============================= -->
@@ -176,7 +180,7 @@
 				<a href="#"><img width="60" height="60" src="assets/images/youtube.png" title="youtube" alt="youtube"/></a>
 			 </div> 
 		 </div>
-		<p class="pull-right">&copy; Bootshop</p>
+		<p class="pull-right">&copy; shoeshop</p>
 	</div><!-- Container End -->
 	</div>
 <!-- Placed at the end of the document so the pages load faster ============================================= -->
