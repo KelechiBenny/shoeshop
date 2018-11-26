@@ -11,4 +11,9 @@ class BuyController
         // die('here');
         (new Buy)->view();
     }
+
+    protected function sale()
+    {   
+        die('#100');
+    }
 }
