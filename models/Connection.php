@@ -15,7 +15,7 @@ namespace Models;
 
 	private static $_instance = null;
 
-	private function __construct()
+	public function __construct()
 	{		
 		self::$_instance = new \mysqli($this->serverName, $this->username, $this->pass, $this->dbName);
 	}

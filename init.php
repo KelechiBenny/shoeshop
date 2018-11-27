@@ -17,5 +17,4 @@ require __DIR__ . '/vendor/autoload.php';
 // });
 
 ob_end_flush();
-
 ?>

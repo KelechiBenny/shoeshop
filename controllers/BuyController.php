@@ -15,4 +15,9 @@ class BuyController
     public function sell(){
         die("100 naira");
     }
+
+    protected function sale()
+    {   
+        die('#100');
+    }
 }
