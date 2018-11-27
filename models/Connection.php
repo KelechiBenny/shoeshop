@@ -20,7 +20,7 @@ namespace Models;
 		self::$_instance = new \mysqli($this->serverName, $this->username, $this->pass, $this->dbName);
 	}
 	
-	public function getConnection(){
+	protected function getConnection(){
 
 		if(is_null(self::$_instance))
 		{

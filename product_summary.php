@@ -40,19 +40,23 @@
 		<form class="form-inline navbar-search" method="post" action="products.html" >
 		<input id="srchFld" class="srchTxt" type="text" />
 		  <select class="srchTxt">
-			<option>All</option>
+			<!-- <option>All</option>
 			<option>CLOTHES </option>
 			<option>FOOD AND BEVERAGES </option>
 			<option>HEALTH & BEAUTY </option>
 			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
+			<option>BOOKS & ENTERTAINMENTS </option> -->
+			<?php
+				$shoes = new Controllers\shoesControllers;
+				$shoes->viewCategorySelect();
+			?>
 		</select> 
 		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
     </form>
     <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
+	 <li class=""><a href="index.php">Specials Offer</a></li>
+	 <li class=""><a href="index.php">Latest Products</a></li>
+	 <!-- <li class=""><a href="contact.html">Contact</a></li> -->
 	 <li class="">
 	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
 	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
@@ -92,7 +96,21 @@
 	<div id="sidebar" class="span3">
 		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="assets/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
 		<ul id="sideManu" class="nav nav-tabs nav-stacked">
-			<li class="subMenu open"><a> ELECTRONICS [230]</a>
+			<li class="subMenu open"><a> CATEGORIES[2]</a>
+				<ul>
+				
+				<?php
+
+					$shoes = new Controllers\shoesControllers;
+
+					//$buy->view();
+					$shoes->viewCategory();
+
+				?>
+				</ul>
+			</li>
+
+			<!-- <li class="subMenu open"><a> ELECTRONICS [230]</a>
 				<ul>
 				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
 				<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
@@ -125,10 +143,10 @@
 			</li>
 			<li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
 			<li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-			<li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
+			 --> <!-- <li> <a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li> --> 
 		</ul>
 		<br/>
-		  <div class="thumbnail">
+		  <!-- <div class="thumbnail">
 			<img src="assets/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
 			<div class="caption">
 			  <h5>Panasonic</h5>
@@ -141,7 +159,7 @@
 				  <h5>Kindle</h5>
 				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
 				</div>
-			  </div><br/>
+			  </div><br/> -->
 			<div class="thumbnail">
 				<img src="assets/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
 				<div class="caption">
@@ -152,10 +170,10 @@
 <!-- Sidebar end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
-		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
+		<li><a href="index.php">Home</a> <span class="divider">/</span></li>
 		<li class="active"> SHOPPING CART</li>
     </ul>
-	<h3>  SHOPPING CART [ <small>3 Item(s) </small>]<a href="products.html" class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Continue Shopping </a></h3>	
+	<h3>  SHOPPING CART [ <small>3 Item(s) </small>]<a href="index.php" class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Continue Shopping </a></h3>	
 	<hr class="soft"/>
 	<table class="table table-bordered">
 		<tr><th> I AM ALREADY REGISTERED  </th></tr>
@@ -176,19 +194,19 @@
 				</div>
 				<div class="control-group">
 				  <div class="controls">
-					<button type="submit" class="btn">Sign in</button> OR <a href="register.html" class="btn">Register Now!</a>
+					<button type="submit" class="btn">Sign in</button> OR <a href="register.php" class="btn">Register Now!</a>
 				  </div>
 				</div>
 				<div class="control-group">
 					<div class="controls">
-					  <a href="forgetpass.html" style="text-decoration:underline">Forgot password ?</a>
+					  <a href="forgetpass.php" style="text-decoration:underline">Forgot password ?</a>
 					</div>
 				</div>
 			</form>
 		  </td>
 		  </tr>
 	</table>		
-			
+			<!-- the cart starts here -->
 	<table class="table table-bordered">
               <thead>
                 <tr>
@@ -255,31 +273,13 @@
 				</tbody>
             </table>
 		
-		
-            <table class="table table-bordered">
-			<tbody>
-				 <tr>
-                  <td> 
-				<form class="form-horizontal">
-				<div class="control-group">
-				<label class="control-label"><strong> VOUCHERS CODE: </strong> </label>
-				<div class="controls">
-				<input type="text" class="input-medium" placeholder="CODE">
-				<button type="submit" class="btn"> ADD </button>
-				</div>
-				</div>
-				</form>
-				</td>
-                </tr>
-				
-			</tbody>
-			</table>
-			
+		<!-- the cart ends here -->
+          	
 			<table class="table table-bordered">
-			 <tr><th>ESTIMATE YOUR SHIPPING </th></tr>
+			 <tr><th>Supply your Details of Payment</th></tr>
 			 <tr> 
 			 <td>
-				<form class="form-horizontal">
+				<form class="form-horizontal" method="post" action="product_summary.php">
 				  <div class="control-group">
 					<label class="control-label" for="inputCountry">Country </label>
 					<div class="controls">
@@ -293,16 +293,34 @@
 					</div>
 				  </div>
 				  <div class="control-group">
+					<label class="control-label"><strong> VOUCHERS CODE: </strong> </label>
 					<div class="controls">
-					  <button type="submit" class="btn">ESTIMATE </button>
+					<input type="text" class="input-medium" placeholder="CODE">
+				</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label"><strong> Address</strong> </label>
+					<div class="controls">
+					<input type="text" class="input-medium" placeholder="Address">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label"><strong> Phone Number</strong> </label>
+					<div class="controls">
+					<input type="tel" class="input-medium" placeholder="Phone Number">
+				</div>
+				</div>
+				  <div class="control-group">
+					<div class="controls">
+					  <button type="submit" class="btn">Pay </button>
 					</div>
 				  </div>
 				</form>				  
 			  </td>
 			  </tr>
             </table>		
-	<a href="products.html" class="btn btn-large"><i class="icon-arrow-left"></i> Continue Shopping </a>
-	<a href="login.html" class="btn btn-large pull-right">Next <i class="icon-arrow-right"></i></a>
+	<a href="index.php" class="btn btn-large"><i class="icon-arrow-left"></i> Continue Shopping </a>
+	<a href="#" class="btn btn-large pull-right">Next <i class="icon-arrow-right"></i></a>
 	
 </div>
 </div></div>
@@ -314,27 +332,26 @@
 		<div class="row">
 			<div class="span3">
 				<h5>ACCOUNT</h5>
-				<a href="login.html">YOUR ACCOUNT</a>
-				<a href="login.html">PERSONAL INFORMATION</a> 
-				<a href="login.html">ADDRESSES</a> 
-				<a href="login.html">DISCOUNT</a>  
-				<a href="login.html">ORDER HISTORY</a>
+				<a href="login.php">YOUR ACCOUNT</a>
+				<a href="login.php">PERSONAL INFORMATION</a> 
+				<a href="login.php">ADDRESSES</a> 
+				<a href="login.php">DISCOUNT</a>  
+				<a href="login.php">ORDER HISTORY</a>
 			 </div>
 			<div class="span3">
 				<h5>INFORMATION</h5>
-				<a href="contact.html">CONTACT</a>  
-				<a href="register.html">REGISTRATION</a>  
-				<a href="legal_notice.html">LEGAL NOTICE</a>  
-				<a href="tac.html">TERMS AND CONDITIONS</a> 
-				<a href="faq.html">FAQ</a>
+				<a href="contact.php">CONTACT</a>  
+				<a href="register.php">REGISTRATION</a>  
+				<a href="#">LEGAL NOTICE</a>  
+				<a href="tac.php">TERMS AND CONDITIONS</a> 
+				<a href="#">FAQ</a>
 			 </div>
 			<div class="span3">
 				<h5>OUR OFFERS</h5>
-				<a href="#">NEW PRODUCTS</a> 
-				<a href="#">TOP SELLERS</a>  
-				<a href="special_offer.html">SPECIAL OFFERS</a>  
-				<a href="#">MANUFACTURERS</a> 
-				<a href="#">SUPPLIERS</a> 
+				<a href="index.php">NEW PRODUCTS</a> 
+				<a href="index.php">TOP SELLERS</a>  
+				<a href="index.php">SPECIAL OFFERS</a>  
+				 
 			 </div>
 			<div id="socialMedia" class="span3 pull-right">
 				<h5>SOCIAL MEDIA </h5>
@@ -343,7 +360,7 @@
 				<a href="#"><img width="60" height="60" src="assets/images/youtube.png" title="youtube" alt="youtube"/></a>
 			 </div> 
 		 </div>
-		<p class="pull-right">&copy; Bootshop</p>
+		<p class="pull-right">&copy; ShoeShop</p>
 	</div><!-- Container End -->
 	</div>
 <!-- Placed at the end of the document so the pages load faster ============================================= -->

@@ -2,15 +2,15 @@
 
 include 'init.php' ;
 
-$buy = new Controllers\BuyController;
+$buy = new Controllers\SalesController;
 
-$buy->view();
+//$buy->view();
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootshop online Shopping cart</title>
+    <title>ShoeShop online Shopping cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -42,23 +42,27 @@ $buy->view();
 	<span class="icon-bar"></span>
 </a>
   <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Bootsshop"/></a>
-		<form class="form-inline navbar-search" method="post" action="products.html" >
+    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="ShoeShop"/></a>
+		<form class="form-inline navbar-search" method="POST" action= "index.php" >
 		<input id="srchFld" class="srchTxt" type="text" />
-		  <select class="srchTxt">
-			<option>All</option>
+		  <select class="srchTxt" name="category">
+			<!--<option>All</option>
 			<option>CLOTHES </option>
 			<option>FOOD AND BEVERAGES </option>
 			<option>HEALTH & BEAUTY </option>
 			<option>SPORTS & LEISURE </option>
-			<option>BOOKS & ENTERTAINMENTS </option>
+			<option>BOOKS & ENTERTAINMENTS </option>-->
+			<?php
+				$call = new Controllers\shoesControllers;
+				$call->viewCategorySelect();
+			?>
 		</select> 
 		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
     </form>
     <ul id="topMenu" class="nav pull-right">
-	 <li class=""><a href="special_offer.html">Specials Offer</a></li>
-	 <li class=""><a href="normal.html">Delivery</a></li>
-	 <li class=""><a href="contact.html">Contact</a></li>
+	 <li class=""><a href="#Special" >Special Product</a></li>
+	 <li class=""><a href="#Main">Latest Product</a></li>
+	 <!-- <li class=""><a href="cont">Contact</a></li> -->
 	 <li class="">
 	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
 	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
@@ -67,7 +71,7 @@ $buy->view();
 			<h3>Login Block</h3>
 		  </div>
 		  <div class="modal-body">
-			<form class="form-horizontal loginFrm">
+			<form class="form-horizontal loginFrm" method="post" action="index.php">
 			  <div class="control-group">								
 				<input type="text" id="inputEmail" placeholder="Email">
 			  </div>
@@ -162,42 +166,23 @@ $buy->view();
 	<div id="sidebar" class="span3">
 		<div class="well well-small"><a id="myCart" href="product_summary.html"><img src="assets/images/ico-cart.png" alt="cart">3 Items in your cart  <span class="badge badge-warning pull-right">$155.00</span></a></div>
 		<ul id="sideManu" class="nav nav-tabs nav-stacked">
-			<li class="subMenu open"><a> ELECTRONICS [230]</a>
+			<li class="subMenu open"><a> CATEGORIES[2]</a>
 				<ul>
-				<li><a class="active" href="products.html"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+				
+				<?php
+
+					$shoes = new Controllers\shoesControllers;
+
+					//$buy->view();
+					$shoes->viewCategory();
+
+				?>
 				</ul>
 			</li>
-			<li class="subMenu"><a> CLOTHES [840] </a>
-			<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Clothing (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Shoes (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Women's Hand Bags (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Clothings  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Men's Shoes (6)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Clothing (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Kids Shoes (3)</a></li>												
-			</ul>
-			</li>
-			<li class="subMenu"><a>FOOD AND BEVERAGES [1000]</a>
-				<ul style="display:none">
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Angoves  (35)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Bouchard Aine & Fils (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>French Rabbit (5)</a></li>	
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Louis Bernard  (45)</a></li>
-				<li><a href="products.html"><i class="icon-chevron-right"></i>BIB Wine (Bag in Box) (8)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Other Liquors & Wine (5)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Garden (3)</a></li>												
-				<li><a href="products.html"><i class="icon-chevron-right"></i>Khao Shong (11)</a></li>												
-			</ul>
-			</li>
-			<li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
-			<li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-			<li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
+			
 		</ul>
-		<br/>
+		
+		<br/><!--
 		  <div class="thumbnail">
 			<img src="assets/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
 			<div class="caption">
@@ -211,16 +196,17 @@ $buy->view();
 				  <h5>Kindle</h5>
 				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
 				</div>
-			  </div><br/>
+			  </div><br/>-->
 			<div class="thumbnail">
 				<img src="assets/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
 				<div class="caption">
 				  <h5>Payment Methods</h5>
 				</div>
 			  </div>
+			
 	</div>
 <!-- Sidebar end=============================================== -->
-		<div class="span9">		
+		<div class="span9" id="Special">		
 			<div class="well well-small">
 			<h4>Featured Products <small class="pull-right">200+ featured products</small></h4>
 			<div class="row-fluid">
@@ -228,7 +214,17 @@ $buy->view();
 			<div class="carousel-inner">
 			  <div class="item active">
 			  <ul class="thumbnails">
-				<li class="span3">
+			  	<?php
+
+					//include 'init.php' ;
+
+					$shoes = new Controllers\shoesControllers;
+
+					//$buy->view();
+					$shoes->viewShoesLimit();
+				?>
+
+				<!--<li class="span3">
 				  <div class="thumbnail">
 				  <i class="tag"></i>
 					<a href="product_details.html"><img src="assets/images/products/b1.jpg" alt=""></a>
@@ -267,12 +263,22 @@ $buy->view();
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
-				</li>
+				</li>-->
 			  </ul>
 			  </div>
 			   <div class="item">
 			  <ul class="thumbnails">
-				<li class="span3">
+			  	<?php
+
+					//include 'init.php' ;
+
+					$shoes = new Controllers\shoesControllers;
+
+					//$buy->view();
+					$shoes->viewShoesLimit();
+				?>
+
+				<!--<li class="span3">
 				  <div class="thumbnail">
 				  <i class="tag"></i>
 					<a href="product_details.html"><img src="assets/images/products/5.jpg" alt=""></a>
@@ -309,12 +315,22 @@ $buy->view();
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
-				</li>
+				</li>-->
 			  </ul>
 			  </div>
 			   <div class="item">
 			  <ul class="thumbnails">
-				<li class="span3">
+			  	<?php
+
+					//include 'init.php' ;
+
+					$shoes = new Controllers\shoesControllers;
+
+					//$buy->view();
+					$shoes->viewShoesLimit();
+				?>
+
+				<!--<li class="span3">
 				  <div class="thumbnail">
 					<a href="product_details.html"><img src="assets/images/products/9.jpg" alt=""></a>
 					<div class="caption">
@@ -389,7 +405,7 @@ $buy->view();
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
-				</li>
+				</li>-->
 			  </ul>
 			  </div>
 			  </div>
@@ -398,9 +414,19 @@ $buy->view();
 			  </div>
 			  </div>
 		</div>
+		<div class="" id="Main">
 		<h4>Latest Products </h4>
 			  <ul class="thumbnails">
-				<li class="span3">
+				<?php
+
+					//include 'init.php' ;
+
+					$shoes = new Controllers\shoesControllers;
+
+					//$buy->view();
+					$shoes->viewShoes();
+				?>
+				<!--<li class="span3">
 				  <div class="thumbnail">
 					<a  href="product_details.html"><img src="assets/images/products/6.jpg" alt=""/></a>
 					<div class="caption">
@@ -472,8 +498,9 @@ $buy->view();
 					   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
 					</div>
 				  </div>
-				</li>
+				</li>-->
 			  </ul>	
+			</div>
 
 		</div>
 		</div>
@@ -485,27 +512,26 @@ $buy->view();
 		<div class="row">
 			<div class="span3">
 				<h5>ACCOUNT</h5>
-				<a href="login.html">YOUR ACCOUNT</a>
-				<a href="login.html">PERSONAL INFORMATION</a> 
-				<a href="login.html">ADDRESSES</a> 
-				<a href="login.html">DISCOUNT</a>  
-				<a href="login.html">ORDER HISTORY</a>
+				<a href="login.php">YOUR ACCOUNT</a>
+				<a href="login.php">PERSONAL INFORMATION</a> 
+				<a href="login.php">ADDRESSES</a> 
+				<a href="login.php">DISCOUNT</a>  
+				<a href="login.php">ORDER HISTORY</a>
 			 </div>
 			<div class="span3">
 				<h5>INFORMATION</h5>
-				<a href="contact.html">CONTACT</a>  
-				<a href="register.html">REGISTRATION</a>  
-				<a href="legal_notice.html">LEGAL NOTICE</a>  
-				<a href="tac.html">TERMS AND CONDITIONS</a> 
-				<a href="faq.html">FAQ</a>
+				<a href="contact.php">CONTACT</a>  
+				<a href="register.php">REGISTRATION</a>  
+				<a href="#">LEGAL NOTICE</a>  
+				<a href="tac.php">TERMS AND CONDITIONS</a> 
+				<a href="#">FAQ</a>
 			 </div>
 			<div class="span3">
 				<h5>OUR OFFERS</h5>
-				<a href="#">NEW PRODUCTS</a> 
-				<a href="#">TOP SELLERS</a>  
-				<a href="special_offer.html">SPECIAL OFFERS</a>  
-				<a href="#">MANUFACTURERS</a> 
-				<a href="#">SUPPLIERS</a> 
+				<a href="#Main">NEW PRODUCTS</a> 
+				<a href="#Main">TOP SELLERS</a>  
+				<a href="#Main">SPECIAL OFFERS</a>  
+				 
 			 </div>
 			<div id="socialMedia" class="span3 pull-right">
 				<h5>SOCIAL MEDIA </h5>
@@ -514,7 +540,7 @@ $buy->view();
 				<a href="#"><img width="60" height="60" src="assets/images/youtube.png" title="youtube" alt="youtube"/></a>
 			 </div> 
 		 </div>
-		<p class="pull-right">&copy; Bootshop</p>
+		<p class="pull-right">&copy; ShoeShop</p>
 	</div><!-- Container End -->
 	</div>
 <!-- Placed at the end of the document so the pages load faster ============================================= -->

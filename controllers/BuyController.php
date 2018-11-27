@@ -9,6 +9,11 @@ class BuyController
     public function view()
     {
         // die('here');
-        (new Buy)->view();
+        (new Buy)->fees();
+    }
+    
+    protected function sell(){
+
+        die("#100");
     }
 }
