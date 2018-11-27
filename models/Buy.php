@@ -9,7 +9,7 @@ class Buy extends Connection
         $this->conn = $this->getConnection();
     }
     
-    public function view()
+    public function fees()
     {
         die('here');
     }

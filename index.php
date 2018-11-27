@@ -2,7 +2,7 @@
 
 include 'init.php' ;
 
-$buy = new Controllers\BuyController;
+$buy = new Controllers\SalesController;
 
 $buy->view();
 ?>
