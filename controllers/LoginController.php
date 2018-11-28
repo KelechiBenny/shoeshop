@@ -14,7 +14,7 @@ class LoginController
             $this->email = htmlentities($_POST['email']);
             $this->password = md5(htmlentities($_POST['password']));
 
-            $error_array = array();
+            $error_array = [];
 
             if (empty($this->email)) {
                 $error_array[0] = '<p class="error> Email field should not be empty</p>';
@@ -28,7 +28,7 @@ class LoginController
                 $error_array[2] = '<p class="error"> Email should be a valid email</p>';
             }
 
-            if ($error_array != 0) {
+            if (count($error_array) != 0) {
                 echo implode ($error_array);
             }else {
                 $this->loginUser($this->email, $this->password);
@@ -38,7 +38,7 @@ class LoginController
 
     public function loginUser($email, $password)
     {
-        $models = new Models;
+        $models = new Login;
         $models->login($email, $password);
     }
 }

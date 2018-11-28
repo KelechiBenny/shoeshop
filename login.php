@@ -168,7 +168,7 @@ include 'controllers/LoginController.php';
 		<div class="span4">
 			<div class="well">
 			<h5>ALREADY REGISTERED ?</h5>
-			<form method="post" action="">
+			<form method="POST" action="">
 			<?php
 				$login = new LoginController;
 				$login->loginShopper();
@@ -187,7 +187,7 @@ include 'controllers/LoginController.php';
 			  </div>
 			  <div class="control-group">
 				<div class="controls">
-				  <button type="submit" name="login" class="btn">Sign in</button> <a href="forgetpass.html">Forget password?</a>
+				  <input type="submit" name="login" class="btn" value="Sign in"> <a href="forgetpass.php">Forget password?</a>
 				</div>
 				<div></div>
 					<p>Don't have an account <a href="register.php">Register</a>.</p>
