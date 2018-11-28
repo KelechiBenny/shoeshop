@@ -1,4 +1,9 @@
-<?php include 'init.php'; ?>
+<?php
+use controllers\LoginController;
+
+include 'init.php'; 
+include 'controllers/LoginController.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -158,45 +163,34 @@
 	<h3> Login</h3>	
 	<hr class="soft"/>
 	
-	<div class="row">
-		<div class="span4">
-			<div class="well">
-			<h5>CREATE YOUR ACCOUNT</h5><br/>
-			Enter your e-mail address to create an account.<br/><br/><br/>
-			<form action="register.html">
-			  <div class="control-group">
-				<label class="control-label" for="inputEmail0">E-mail address</label>
-				<div class="controls">
-				  <input class="span3"  type="text" id="inputEmail0" placeholder="Email">
-				</div>
-			  </div>
-			  <div class="controls">
-			  <button type="submit" class="btn block">Create Your Account</button>
-			  </div>
-			</form>
-		</div>
-		</div>
+		<div class="span1"> &nbsp;</div>
 		<div class="span1"> &nbsp;</div>
 		<div class="span4">
 			<div class="well">
 			<h5>ALREADY REGISTERED ?</h5>
-			<form>
+			<form method="POST" action="">
+			<?php
+				$login = new LoginController;
+				$login->loginShopper();
+			?>
 			  <div class="control-group">
 				<label class="control-label" for="inputEmail1">Email</label>
 				<div class="controls">
-				  <input class="span3"  type="text" id="inputEmail1" placeholder="Email">
+				  <input class="span3"  type="text" id="inputEmail1" name="email" placeholder="Email">
 				</div>
 			  </div>
 			  <div class="control-group">
 				<label class="control-label" for="inputPassword1">Password</label>
 				<div class="controls">
-				  <input type="password" class="span3"  id="inputPassword1" placeholder="Password">
+				  <input type="password" class="span3" name="password"  id="inputPassword1" placeholder="Password">
 				</div>
 			  </div>
 			  <div class="control-group">
 				<div class="controls">
-				  <button type="submit" class="btn">Sign in</button> <a href="forgetpass.html">Forget password?</a>
+				  <input type="submit" name="login" class="btn" value="Sign in"> <a href="forgetpass.php">Forget password?</a>
 				</div>
+				<div></div>
+					<p>Don't have an account <a href="register.php">Register</a>.</p>
 			  </div>
 			</form>
 		</div>

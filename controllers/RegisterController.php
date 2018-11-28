@@ -21,7 +21,7 @@ class RegisterController
             $this->phone = intval($_POST['phone']);
             $this->address = htmlentities($_POST['address']);
             
-            $error_array = array();
+            $error_array = [];
 
             if (empty($this->email)) {
                 $error_array[0] = '<p class="error"> Email field should not be empty</p>';
