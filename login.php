@@ -1,9 +1,8 @@
 <?php
-use Controllers\LoginController;
+use controllers\LoginController;
 
 include 'init.php'; 
 include 'controllers/LoginController.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -172,7 +171,7 @@ include 'controllers/LoginController.php';
 			<form method="post" action="">
 			<?php
 				$login = new LoginController;
-				$login->login();
+				$login->loginShopper();
 			?>
 			  <div class="control-group">
 				<label class="control-label" for="inputEmail1">Email</label>
@@ -188,8 +187,10 @@ include 'controllers/LoginController.php';
 			  </div>
 			  <div class="control-group">
 				<div class="controls">
-				  <button type="submit" name="signIn" class="btn">Sign in</button> <a href="forgetpass.html">Forget password?</a>
+				  <button type="submit" name="login" class="btn">Sign in</button> <a href="forgetpass.html">Forget password?</a>
 				</div>
+				<div></div>
+					<p>Don't have an account <a href="register.php">Register</a>.</p>
 			  </div>
 			</form>
 		</div>

@@ -8,9 +8,9 @@ class LoginController
     public $email;
     public $password;
 
-    public function login()
+    public function loginShopper()
     {
-        if (isset($_POST['signIn'])) {
+        if (isset($_POST['login'])) {
             $this->email = htmlentities($_POST['email']);
             $this->password = md5(htmlentities($_POST['password']));
 
