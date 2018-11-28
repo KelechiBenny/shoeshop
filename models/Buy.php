@@ -11,6 +11,6 @@ class Buy extends Connection
     
     public function view()
     {
-        die('here');
+        // header('location: index.php');
     }
 }

@@ -2,6 +2,7 @@
 namespace Controllers;
 
 use Models\Buy;
+use Illuminate\Database\Eloquent\Model;
 
 class BuyController
 {

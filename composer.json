@@ -10,7 +10,11 @@
     "autoload": {
         "psr-4": {
             "Controllers\\": "controllers/",
-            "Models\\": "models/"
+            "Models\\": "models/",
+            "Illuminate\\Database\\": ""
         }
+    },
+    "require": {
+        "illuminate/database": "^5.7"
     }
 }
