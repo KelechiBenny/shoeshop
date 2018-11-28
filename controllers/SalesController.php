@@ -8,12 +8,10 @@ class SalesController extends BuyController
 
     public function view()
     {
-        // die('here');
-        //(new Buy)->view();
-        //$this->sale();
-
+        // (new Buy)->fees();
+        
         $buy = new BuyController;
-        $buy->sale();
+        $buy->sell();
     }
 
     
